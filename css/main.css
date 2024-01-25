@@ -1,4 +1,28 @@
-body {
-	margin: 0;
-	padding: 0;
+/*
+    Cryterio
+    Copyright © 2024 Cryterio. All rights reserved.
+*/
+
+/**************/
+/*** GLOBAL ***/
+/**************/
+
+html, body {
+	width:100%;
+	height:100%;
+	margin:0;
+	border:0;
+	padding:0;
+	font-family: lexend, Arial, sans-serif;
+	background-color:  #17202a;
+}
+
+section {width: 100%}
+
+.container {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
