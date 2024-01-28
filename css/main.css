@@ -17,12 +17,63 @@ html, body {
 	background-color:  #17202a;
 }
 
-section {width: 100%}
-
-.container {
+.container-nav {
 	color: #fff;
+	width: 90%;
+	max-width: 1400px;
+	/*border: 1px solid red;*/
+	margin: auto;
+
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
+	align-items: center;
+}
+
+
+.container-nav #social-icon {
+	padding: 1rem 0;
+	/*border: 1px solid white;*/
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #17202a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.icon-button:hover{
+	scale: 1.08;
+}
+
+.icon-button img {
+    margin-right: 14px;
+    width: 28px;
+}
+
+
+.container-nav .logo img {
+	width: 260px;
+}
+
+
+
+@media(max-width: 525px) {
+	.container-nav #social-icon {
+		flex-direction: column;
+		align-items: center;
+	}
 }
