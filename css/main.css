@@ -90,7 +90,7 @@ html, body {
 	.container-nav {
 		flex-direction: column;
 		padding: 0;
-		height: 100vh;
+		height: 85vh;
 		justify-content: center;
 		gap: 0.5rem;
 	}
@@ -144,11 +144,11 @@ html, body {
 #about-us h1 {
 	font-size: 4.4rem;
 	text-transform: capitalize;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 #about-us p {
-	letter-spacing: 1px;
+	letter-spacing: 0.6px;
 }
 
 #about-us img {
@@ -180,13 +180,25 @@ html, body {
 		gap: 1rem;
 		padding: 2rem 0;
 	}
-	#about-us-img {
-		gap: 0.8rem;
-	}
 
 	#about-us h1 {
 		font-size: 3.2rem;
 	}
+
+	#about-us-img {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 1rem;
+	}
+
+	.item-1 { grid-area: 1 / 1 / 2 / 2; background: #264653}
+	.item-2 { grid-area: 1 / 2 / 2 / 3; background: #2a9d8f;}
+	.item-3 { grid-area: 2 / 1 / 3 / 2; background: #e9c46a;}
+	.item-4 { grid-area: 2 / 2 / 3 / 3; background: #f4a261}
+	.item-5 { grid-area: 3 / 1 / 4 / 2; background:url(../img/cryterio.webp); 
+		background-size: cover; background-position: center;}
+	.item-6 { grid-area: 3 / 2 / 4 / 3; background: #e76f51} 
+	
 }
 
 @media(max-width: 525px) {
@@ -200,9 +212,13 @@ html, body {
 		width: 100%;
 	}
 
+	#about-us p {
+		letter-spacing: 0.4px;
+	}
 
 	#about-us-img {
 		width: 100%;
+		gap: 0.6rem;
 	}
 
 
