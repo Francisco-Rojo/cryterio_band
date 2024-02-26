@@ -20,9 +20,40 @@
 </head>
 <body>
 	<header>
-		<nav class="container nav">
-			hola mundo
+		<nav class="container navbar" id="nav">
+
+			<button id="close-menu">cerrar</button>
+			
+			<div id="navbar-list-content">
+				<ul>
+					<li><a class="link-active" href="#">inicio</a></li>
+					<li><a class="navbar-list" href="#">eventos</a></li>
+					<li><a class="navbar-list" href="#">música / videos</a></li>
+					<li><a class="navbar-list" href="#">la banda</a></li>
+					<li><a class="navbar-list" href="#">epk</a></li>
+				</ul>
+			</div>
+			<div id="navbar-social-media">
+				<a class="navbar-icon-button">
+					<img src="./img/social-media/instagram-icon-white.svg">
+				</a>
+				<a class="navbar-icon-button">
+					<img src="./img/social-media/tiktok-icon-white.svg">
+				</a>
+				<a class="navbar-icon-button">
+					<img src="./img/social-media/youtube-icon-white.svg">
+				</a>
+				<a class="navbar-icon-button">
+					<img src="./img/social-media/spotify-icon-white.svg">
+				</a>
+			</div>
 		</nav>
+
+		<div class="container" id="navbar-responsive">
+			<a id="open-menu" class="navbar-icon-button">
+				<img src="./img/social-media/hamburger-buttom-white.svg">
+			</a>
+		</div>
 
 		<div class="container container-nav-icon-social">
 			<div id="nav-logo">
@@ -67,7 +98,7 @@
 			</div>
 		</section>
 
-		<section>
+		<!--section>
 			<div class="container container-music">
 				<div class="music-content">
 					<div class="album">
@@ -170,7 +201,21 @@
 				</div>
 			</div>
 
-		</section>
+		</section-->
 	</main>
+
+	<script>
+		const nav = document.querySelector('#nav');
+		const btnClose = document.querySelector('#close-menu');
+		const btnOpen = document.querySelector('#open-menu');
+
+		btnOpen.addEventListener('click', () => {
+			nav.classList.add('visible');
+		})
+
+		btnClose.addEventListener('click', () => {
+			nav.classList.remove('visible');
+		})
+	</script>
 </body>
 </html>
