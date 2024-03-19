@@ -1,221 +1,90 @@
 <!DOCTYPE html>
-<html lang="es-MX">
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="Banda de Death Metal originaria de Xochimilco, México" />
-	<meta name="keywords" content="música,banda,México,Death Metal,Xochimilco" />
-   	<meta name="author" content="Cryterio" />
-   	<link rel="shortcut icon" href="" /> <!-- Agregar fabicon -->
-   	<!-- iOS WEB APP -->
-	<meta name="apple-mobile-web-app-title" content="Cryterio" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<title>Cryterio</title>
+	</head>
+	<body>
+	
+		<header class="header">
+			<div class="header__content container">
+				<div class="hamburger">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+	
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">inicio</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">eventos</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">música/videos</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">la banda</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">fotos</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">epk</a>
+						</li>
+					</ul>
+				</nav>
+	
+				<div class="social-media">
+					<a href="#" class="social-media__link">
+						<img src="./img/social-media/icon-facebook-white.svg" class="social-media__icon" alt="icon-facebook">
+					</a>
+					<a href="#" class="social-media__link">
+						<img src="./img/social-media/icon-instagram-withe.svg" class="social-media__icon" alt="icon-instagram">
+					</a>
+					<a href="#" class="social-media__link">
+						<img src="./img/social-media/icon-tiktok-white.svg" class="social-media__icon" alt="icon-tiktok">
+					</a>
+					<a href="#" class="social-media__link">
+						<img src="./img/social-media/icon-youtube-white.svg" class="social-media__icon" alt="icon-youtube">
+					</a>
+					<a href="#" class="social-media__link">
+						<img src="./img/social-media/icon-spotify-white.svg" class="social-media__icon" alt="icon-spotify">
+					</a>
+				</div>
+	
+			</div>
+		</header>
 
-	<title>Cryterio</title>
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Cryterio" />
-	<meta property="og:description" content="Banda de Death Metal originaria de Xochimilco, México">
-	<meta property="og:image" content="" />  <!-- example: content="https://ia.media-imdb.com/images/rock.jpg" -->
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-</head>
-<body>
-	<header>
-		<nav class="container navbar" id="nav">
+		<main>
+			<section class="hero">
+				
+				<img src="./img/hero-cryterio-2560.webp" class="hero__img" alt="cryterio-band">
 
-			<button id="close-menu">cerrar</button>
+				<div class=" container hero__content">
+					
+					<div>
+						<h1>Cryterio</h1>
+						<a href="#">escuchar nuestra música</a>
+					</div>
+				</div>
+			</section>
+
 			
-			<div id="navbar-list-content">
-				<ul>
-					<li><a class="link-active" href="#">inicio</a></li>
-					<li><a class="navbar-list" href="#">eventos</a></li>
-					<li><a class="navbar-list" href="#">música / videos</a></li>
-					<li><a class="navbar-list" href="#">la banda</a></li>
-					<li><a class="navbar-list" href="#">epk</a></li>
-				</ul>
-			</div>
-			<div id="navbar-social-media">
-				<a class="navbar-icon-button">
-					<img src="./img/social-media/instagram-icon-white.svg">
-				</a>
-				<a class="navbar-icon-button">
-					<img src="./img/social-media/tiktok-icon-white.svg">
-				</a>
-				<a class="navbar-icon-button">
-					<img src="./img/social-media/youtube-icon-white.svg">
-				</a>
-				<a class="navbar-icon-button">
-					<img src="./img/social-media/spotify-icon-white.svg">
-				</a>
-			</div>
-		</nav>
 
-		<div class="container" id="navbar-responsive">
-			<a id="open-menu" class="navbar-icon-button">
-				<img src="./img/social-media/hamburger-buttom-white.svg">
-			</a>
-		</div>
+		</main>
 
-		<div class="container container-nav-icon-social">
-			<div id="nav-logo">
-				<img src="./img/cryterio_logo.webp">
-			</div>	
-			<div id="nav-social-icon">
-				<button class="nav-icon-button">
-					<img src="./img/social-media/instagram-icon-art.svg">
-					instagram
-				</button>
-				<button class="nav-icon-button">
-					<img src="./img/social-media/tik-tok-icon-art.svg">
-					tikTok
-				</button>
-				<button class="nav-icon-button">
-					<img src="./img/social-media/youtube-icon-art.svg">
-					youTube
-				</button>
-				<button class="nav-icon-button">
-					<img src="./img/social-media/spotify-icon-art.svg">
-					spotify
-				</button>
-			</div>
-		</div>
-	</header>
-	<main>
-		<section>
-			<div class="container container-about-us">
-				<div id="about-us">
-					<h1>cryterio</h1>
-					<p>Somos una banda originaria de <strong> Xochimilco, México</strong>, conformada por tres integrantes: "nombre1", "nombre2" y "nombre3", En la cual tomamos como punto principal el criterio de nuestros artistas favoritos, música favorita, arte, etc., y lo utilizamos como inspiración. <br><br>Nacidos de proyectos perdidos, hemos tomado las riendas para poder plasmar algo que teníamos pendiente en la vida: nuestra inspiración por las raíces prehispánicas mexicanas. De este modo, tomamos el criterio histórico de nuestras raíces para simbolizarlo en nuestras letras y música, creando nuestro primer álbum dividido en dos partes titulado: <strong>Donde los muertos descansan</strong>.</p>
-				</div>
-
-				<div id="about-us-img">
-					<div class="item-1"></div>
-					<div class="item-2"></div>
-					<div class="item-3"></div>
-					<div class="item-4"></div>
-					<div class="item-5"></div>
-					<div class="item-6"></div>
-				</div>
-			</div>
-		</section>
-
-		<!--section>
-			<div class="container container-music">
-				<div class="music-content">
-					<div class="album">
-
-						<div class="album-content">
-							<div class="title-album">
-								<h3>Álbum: Donde los muertos descansan parte 1</h3>
-								<p>Año: 2023</p>
-							</div>
-
-							<div class="list-album">
-								<div class="song">
-									<p>01</p>
-									<p>Ahuizol</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>02</p>
-									<p>Senda Mictla</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>03</p>
-									<p>Diosa Madre</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>04</p>
-									<p>Cantos Ceremoniales</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>05</p>
-									<p>Llantos por los Muertos</p>
-									<p>3:00</p>
-								</div>
-							</div>	
-							<div class="social-media-album">
-								<img src="./img/social-media/spotify-white.svg">
-								<img src="./img/social-media/youtube-white.svg">
-							</div>
-						</div>
-						
-					</div>
-				</div>
-
-				<div class="music-image">
-					<div class="img"></div>
-				</div>
-			</div>
-
-			<div class="container container-music">
-				<div class="music-content">
-					<div class="album">
-
-						<div class="album-content">
-							<div class="title-album">
-								<h3>Álbum: Donde los muertos descansan parte 2</h3>
-								<p>Año: 2023</p>
-							</div>
-
-							<div class="list-album">
-								<div class="song">
-									<p>01</p>
-									<p>Ahuizol</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>02</p>
-									<p>Senda Mictla</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>03</p>
-									<p>Diosa Madre</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>04</p>
-									<p>Cantos Ceremoniales</p>
-									<p>3:00</p>
-								</div>
-								<div class="song">
-									<p>05</p>
-									<p>Llantos por los Muertos</p>
-									<p>3:00</p>
-								</div>
-							</div>	
-							<div class="social-media-album">
-								<img src="./img/social-media/spotify-white.svg">
-								<img src="./img/social-media/youtube-white.svg">
-							</div>
-						</div>
-						
-					</div>
-				</div>
-
-				<div class="music-image">
-					<div class="img"></div>
-				</div>
-			</div>
-
-		</section-->
-	</main>
-
-	<script>
-		const nav = document.querySelector('#nav');
-		const btnClose = document.querySelector('#close-menu');
-		const btnOpen = document.querySelector('#open-menu');
-
-		btnOpen.addEventListener('click', () => {
-			nav.classList.add('visible');
-		})
-
-		btnClose.addEventListener('click', () => {
-			nav.classList.remove('visible');
-		})
-	</script>
-</body>
+		<footer>
+			<p> © 2024, Cryterio. Todos los derechos reservados. <br> Todas las canciones mostradas en este sitio estan bajo derecho de autor. </p>
+		</footer>
+	
+		<script type="text/javascript" src="./js/menu.js"></script>
+	</body>
 </html>
