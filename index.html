@@ -65,25 +65,30 @@
 
 		<main>
 			<section class="hero">
-				
-				<img src="./img/hero-cryterio-2560.webp" class="hero__img" alt="cryterio-band">
+
+				<picture class="hero__img">
+					<source srcset="./img/hero-cryterio-480.webp"  class="hero__img" media="(max-width: 480px)">
+					<source srcset="./img/hero-cryterio-820.webp"  class="hero__img" media="(max-width: 820px)">
+					<source srcset="./img/hero-cryterio-1400.webp" class="hero__img"  media="(max-width: 1440px)">
+					<img src="./img/hero-cryterio-2560.webp" class="hero__img" alt="cryterio-band">
+				</picture>
 
 				<div class=" container hero__content">
-					
 					<div>
 						<h1>Cryterio</h1>
 						<a href="#">escuchar nuestra música</a>
 					</div>
 				</div>
+
+					
+				<footer>
+					<p> © 2024, Cryterio. Todos los derechos reservados. <br> Todas las canciones mostradas en este sitio estan bajo derecho de autor. </p>
+				</footer>
+				
 			</section>
-
 			
-
 		</main>
 
-		<footer>
-			<p> © 2024, Cryterio. Todos los derechos reservados. <br> Todas las canciones mostradas en este sitio estan bajo derecho de autor. </p>
-		</footer>
 	
 		<script type="text/javascript" src="./js/menu.js"></script>
 	</body>
